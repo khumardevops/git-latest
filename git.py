@@ -9,4 +9,8 @@ git log
 git show
 git reset
 git revert
+git clean
+git branch branchname
+git checkout -b branchname
+git merge 
 
