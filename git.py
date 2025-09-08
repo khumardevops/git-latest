@@ -11,6 +11,7 @@ git reset
 git revert
 git clean
 git branch branchname
+git branch -d branchname
 git checkout -b branchname
 git merge 
 git stash
