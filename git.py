@@ -13,4 +13,6 @@ git clean
 git branch branchname
 git checkout -b branchname
 git merge 
+git stash
+git stash apply
 
