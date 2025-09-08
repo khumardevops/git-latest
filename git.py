@@ -16,4 +16,4 @@ git checkout -b branchname
 git merge 
 git stash
 git stash apply
-
+git pull aliasname master
