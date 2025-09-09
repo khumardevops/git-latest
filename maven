@@ -1,0 +1,21 @@
+maven life cycle and goals
+
+life cycle                 goal
+
+clean                    it deletes previous build files
+site                     it generate the documents for java files
+default          
+we have 
+
+validate               it validates the projects structure and file resources
+compile                it compiles the java source code and juinte test cases
+test                   it will run j unit test cases
+package                it creates the packages (jar/war/ear)
+install                it will store the build artifacts into maven local rpository
+deploy                 it will store the build artifacts into maven remote repository
+
+commands
+
+
+mvn clean install  ------->> it deletes the previous build files and impliments from validate to insatll
+mvn clean deploy   ------->> it deletes the previous build files and impliments from validate to deploy 
