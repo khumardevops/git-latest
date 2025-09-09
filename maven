@@ -4,8 +4,9 @@ life cycle                 goal
 
 clean                    it deletes previous build files
 site                     it generate the documents for java files
-default          
-we have 
+default::          
+
+we have------->>> 
 
 validate               it validates the projects structure and file resources
 compile                it compiles the java source code and juinte test cases
