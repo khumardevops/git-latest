@@ -1,0 +1,50 @@
+agent any{
+
+tools{
+maven "maven3.8.1"
+}
+
+stages{
+  stage('git checkout'){
+  steps{
+ git url
+}
+}
+
+stage('maven build stage'){
+steps{
+ sh "mvn clean package"
+}
+}
+stage('sonarqube report '){
+step{
+sh "mvn clean sonar:sonar"
+}
+}
+stage('artifactupload to nexus stage'){
+steps{
+sh "mvn clean deploy"
+}
+}
+stage('deployintotomcat'){
+steps{
+
+}
+}
+post{
+success{
+emailtextbody: 'build over'.... declarativeway ---success
+
+regards
+aajay
+}
+failure{
+emailtextbody: 'buildover' ... declarativeway --failed
+}
+
+
+}
+}
+
+
+}
