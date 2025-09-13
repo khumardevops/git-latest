@@ -3,7 +3,13 @@ agent any{
 tools{
 maven "maven3.8.1"
 }
+triggers{
+//buildperiodically
+//cron('* * * * *')
+//githubwebhook
+//githubpush()
 
+}
 stages{
   stage('git checkout'){
   steps{
@@ -17,7 +23,7 @@ steps{
 }
 }
 stage('sonarqube report '){
-step{
+steps{
 sh "mvn clean sonar:sonar"
 }
 }
